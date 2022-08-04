@@ -8,10 +8,12 @@ public class FeedbacksMain {
 		
 		//Create an arraylist
 		ArrayList<Feedbacks> feedbacksList = new ArrayList<Feedbacks>();
+		feedbacksList.add(new Feedbacks("J0001","James", 12345678, "The service provided was good", "1 June 2020"));
+		feedbacksList.add(new Feedbacks("J0002", "Mary", 97756342, "The staff is able to answer my queries", "28 May 2021"));
+		feedbacksList.add(new Feedbacks("J0003", "Andy", 87654321, "The app provide the things that I need", "23 February 2022"));
 		
 		//start the program
 		int option = 0;
-		
 		while(option != 4) {
 			
 			FeedbacksMain.menu();
