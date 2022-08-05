@@ -12,7 +12,6 @@ public class TestBikePart {
 	private BikePart bp2;
 	private BikePart bp3;
 	
-
 	private ArrayList<BikePart> bikepartList;
 
 	public TestBikePart() {
@@ -24,6 +23,7 @@ public class TestBikePart {
 		bp1 = new BikePart(2,"Help the object move",9.20,"Wheel Tube");
 		bp2 = new BikePart(1,"To have a place to sit down",10.90,"Seat"); 
 		bp3 = new BikePart(1,"Connects the wheel and the pedal",9.90,"Chain");
+		
 		bikepartList = new ArrayList<BikePart>();
 	}
 
@@ -45,7 +45,7 @@ public class TestBikePart {
 	@Test
 	public void testRetrieveBikePart() {
 
-		  // Test if feedbacks list is not null but empty, so that can add new item
+		// Test if feedbacks list is not null but empty, so that can add new item
 	    assertNotNull("test if there is valid Appointment arraylist to add to", bikepartList);
 
 	    // test if the list of feedback retrieved from the feedbackMainis empty
@@ -69,9 +69,7 @@ public class TestBikePart {
 	    assertEquals("Check that ViewAllBikePartlist", testOutput, allBikePart);
 
 	  }
-
 	
-
 	@Test
 	public void testDeleteBikePart() {
 
@@ -86,7 +84,7 @@ public class TestBikePart {
 		assertNotNull("test if there is valid bikepart arraylist to delete to", bikepartList);
 
 		// Delete the feedback , test the size of the list is 1
-		BikePartMain.DoDeleteBikePart(bikepartList, bp1.getName());
+		BikePartMain.doDeleteBikePart(bikepartList, bp1.getPartname());
 		assertEquals("Test that bikepart arrayList is 0?", 1, bikepartList.size());
 		assertSame("Test that bikepart is added same as 3rd item of the list?", bp2, bikepartList.get(0));
 	}

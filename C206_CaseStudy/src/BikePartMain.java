@@ -63,7 +63,7 @@ public class BikePartMain {
 		bikepartList.add(bp);
 	}
 
-	public static String retrieveAllBikePart(ArrayList<BikeListing> bikepartList) {
+	public static String retrieveAllBikePart(ArrayList<BikePart> bikepartList) {
 		String output = "";
 
 		for (int i = 0; i < bikepartList.size(); i++) {
@@ -74,11 +74,11 @@ public class BikePartMain {
 		return output;
 	}
 
-	private static void viewAllBikePart(ArrayList<BikeListing> bikesList) {
+	private static void viewAllBikePart(ArrayList<BikePart> bikepartList) {
 		BikePartMain.setHeader("BikePart List");
 		String output = String.format("%-20s %-10s %-20s %-10s\n", "QUANTITY", "FEATURE", "PRICE", "NAME");
 
-		output += retrieveAllBikePart(bikesList);
+		output = retrieveAllBikePart(bikepartList);
 		System.out.println(output);
 	}
 
@@ -99,7 +99,7 @@ public class BikePartMain {
 		  return isDeleted;
 		 }
 
-		 public static void deleteBikes(ArrayList<BikeListing> BikesList) {
+		 public static void deleteBikePart(ArrayList<BikePart> BikesList) {
 		  BikePartMain.viewAllBikePart(BikesList);
 
 		  String bikeName = Helper.readString("Enter bike position to delete(eg:1,2,3) > ");

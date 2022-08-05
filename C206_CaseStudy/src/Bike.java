@@ -1,9 +1,6 @@
 
 public class Bike  {
 	
-	// Yesterday, the bikelisting you guys changed it, This class 
-	//diagram is the new one that I should use.
-	
 	
 	private int Quantity;
 	private String Features;
