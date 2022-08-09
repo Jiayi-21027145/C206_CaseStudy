@@ -96,8 +96,27 @@ public class TestFeedbacks {
 		assertSame("Test that 2nd user is moved to the first item of the list?", fb2, feedbacksList.get(0));
 	}
 
-
-
+	
+		//check feedbacks list is not null, so that can add a feedback
+//		assertNotNull("Test if there is valid Feedback arraylist to add to", feedbacksList);
+//		
+//		FeedbacksMain.addFeedback(feedbacksList, fb1);
+//		FeedbacksMain.addFeedback(feedbacksList, fb3);
+//		
+//		//Given an empty list, after adding 2 feedbacks, the size of the list is 2? 
+//		FeedbacksMain.deleteFeedbacks(feedbacksList, fb1);
+//		
+//		assertEquals("Test if that Feedbacks arraylist size is 1?", fb1, feedbacksList.size());
+//		
+//		//Feedback is the same as the first feedback in the list
+//		assertSame("Test that Feedback is added as 1st of the list?", fb3, feedbacksList.get(0));
+//		
+//		//Delete feedback
+//		FeedbacksMain.deleteFeedbacks(feedbacksList, fb2);
+//		assertEquals("Test that Feedbacks arraylist size is 2?", 2, feedbacksList.size());
+//		assertSame("Test that Feedbacks is added as 2nd of the list?", fb2, feedbacksList.get(1));
+////		assertSame("Test that Feedbacks is added same as 3rd item of the list?", fb1, feedbacksList.get(0));
+//	}
 	@After
 	public void tearDown() throws Exception{
 		fb1 = null;
